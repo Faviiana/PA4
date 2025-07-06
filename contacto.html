@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Facultad de Ciencias Sociales</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-white text-decoration-none" aria-label="Volver al inicio">
+                <img src="img/descarga.jpg" alt="Logo de la Facultad de Ciencias Sociales" class="logo me-2">
+                <h1 class="h4 mb-0">Facultad de Ciencias Sociales</h1>
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programa.html">Nuestro Programa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contáctanos</h2>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <section id="formulario-contacto">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" aria-required="true" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce tu nombre.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="email" name="email" aria-required="true" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto:</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto" aria-required="true" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce el asunto.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" aria-required="true" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escribe tu mensaje.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </section>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <section id="info-contacto">
+                        <h3>Nuestra Información</h3>
+                        <p>No dudes en contactarnos a través de los siguientes medios:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> Dirección: Av. La cultura s/n, Cusco, Perú</li>
+                            <li class="mb-2"><i class="fas fa-phone-alt me-2" aria-hidden="true"></i> Teléfono: <a href="tel:+5184123456" class="text-decoration-none">+51 84 123456</a></li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2" aria-hidden="true"></i> Email: <a href="mailto:favii@sociales.edu.pe" class="text-decoration-none">favii@sociales.edu.pe</a></li>
+                        </ul>
+
+                        <h3 class="mt-4">Ubicación en el Mapa</h3>
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.694605995543!2d-71.53670968514112!3d-16.40228388863606!2m3!1f0!2m3!1f0!2m3!1f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91490212f45d3151%3A0x89e24f46a7d1a5c!2sUniversidad%20Nacional%20de%20San%20Agust%C3%ADn%20-%20Facultad%20de%20Ciencias%20Sociales!5e0!3m2!1ses-419!2spe!4v1678886400000!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de la Facultad de Ciencias Sociales"></iframe>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section id="preguntas-frecuentes" class="mt-5">
+                <h3>Preguntas Frecuentes (FAQ)</h3>
+                <div class="accordion" id="accordionFAQ">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                ¿Cuándo inician las postulaciones?
+                            </button>
+                        </h4>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Las fechas de postulación varían anualmente. Te recomendamos visitar nuestra sección de admisiones o contactarnos directamente para información actualizada.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                ¿Hay becas disponibles?
+                            </button>
+                        </h4>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Sí, ofrecemos diferentes tipos de becas por mérito académico y necesidad económica. La información detallada y los requisitos se publican en nuestra web de becas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                ¿Se puede estudiar a distancia?
+                            </button>
+                        </h4>
+                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Actualmente, el programa es presencial, pero contamos con algunas asignaturas que incorporan modalidades semipresenciales o herramientas virtuales de apoyo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Facultad de Ciencias Sociales</h5>
+                    <p>Av. La Cultura s/n, Cusco, Perú</p>
+                    <p>Teléfono: +51 84 123456</p>
+                    <p>Email: favii@sociales.edu.pe</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="programa.html" class="text-white text-decoration-none">Nuestro Programa</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white me-2" aria-label="Facebook de la facultad"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2" aria-label="Twitter de la facultad"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="LinkedIn de la facultad"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0">&copy; 2025 Facultad de Ciencias Sociales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
